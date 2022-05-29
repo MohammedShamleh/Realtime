@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddNewStudentActivity">
+    tools:context=".AddNewCar">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textSize="20sp"
-        android:text="Add New Student"
+        android:text="Add New Car"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="Student name"
+        android:hint="Car name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Student no"
+        android:hint="Car transmission"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/etName"
         app:layout_constraintStart_toStartOf="@+id/etName"

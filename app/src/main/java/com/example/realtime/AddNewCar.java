@@ -24,7 +24,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.UUID;
 
-public class AddNewStudentActivity extends AppCompatActivity {
+public class AddNewCar extends AppCompatActivity {
     public static final int PICK_IMAGE = 1021;
 
     ImageView ivImage;
@@ -91,7 +91,7 @@ public class AddNewStudentActivity extends AppCompatActivity {
                                 }
                             });
                         } else {
-                            Toast.makeText(AddNewStudentActivity.this, "Upload image failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddNewCar.this, "Upload image failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -113,11 +113,11 @@ public class AddNewStudentActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
-                    Toast.makeText(AddNewStudentActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddNewCar.this, "Success", Toast.LENGTH_SHORT).show();
                     onBackPressed();
                 } else {
                     String errorMessage = task.getException().getMessage();
-                    Toast.makeText(AddNewStudentActivity.this, "Failed " + errorMessage, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddNewCar.this, "Failed " + errorMessage, Toast.LENGTH_SHORT).show();
                 }
             }
         });
